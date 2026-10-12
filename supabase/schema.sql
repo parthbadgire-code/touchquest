@@ -1,6 +1,5 @@
 -- =====================================================================================
 -- TouchQuest: PostgreSQL Database Schema & Row-Level Security (RLS)
--- Built for Hacktoberfest Open-Source AI Challenge: "Touch Grass"
 -- =====================================================================================
 
 -- 1. EXTENSIONS

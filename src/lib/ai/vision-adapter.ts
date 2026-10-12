@@ -72,7 +72,7 @@ export class OpenWeightsVisionAdapter implements IVisionScannerAdapter {
       base64Data = `data:${params.mimeType || "image/jpeg"};base64,${params.imageData.toString("base64")}`;
     }
 
-    const systemPrompt = `You are an expert botanical taxonomist and naturalist for TouchQuest ("Touch Grass" open-source challenge).
+    const systemPrompt = `You are an expert botanical taxonomist and naturalist for TouchQuest.
 Analyze the provided image of a wild plant, tree, fungus, or natural specimen.
 Classify the likely organism.
 Respond strictly in valid JSON format only (no markdown, no preamble, no backticks):

@@ -17,7 +17,7 @@ export function Footer() {
               <span className="font-serif text-xl font-bold tracking-tight text-forest-950">
                 TouchQuest
               </span>
-              <Badge variant="earth" size="sm">Touch Grass Challenge</Badge>
+              <Badge variant="earth" size="sm">Touch Grass</Badge>
             </div>
             <p className="text-sm text-forest-800/80 max-w-md leading-relaxed">
               TouchQuest is built to flip the script on algorithmic addiction. Using server-hosted
@@ -27,7 +27,7 @@ export function Footer() {
             <div className="flex items-center gap-2 text-xs font-medium text-forest-700">
               <span>Open Source AI</span>
               <span>•</span>
-              <span>Hacktoberfest 2026</span>
+              <span>Privacy-First</span>
               <span>•</span>
               <span>Zero Screen Loops</span>
             </div>

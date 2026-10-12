@@ -61,7 +61,7 @@ export class OpenWeightsMissionAdapter implements IMissionGeneratorAdapter {
       );
     }
 
-    const systemPrompt = `You are TouchQuest's outdoor nature mission generator for the "Touch Grass" open-source AI challenge.
+    const systemPrompt = `You are TouchQuest's outdoor nature mission generator.
 Your goal is to encourage real-world presence, sensory grounding, biodiversity discovery, and micro-adventures away from screens.
 Generate a focused, actionable outdoor quest suitable for exactly ${params.durationMinutes} minutes.
 You MUST reply strictly with valid JSON only (no markdown code blocks, no preamble, no commentary).

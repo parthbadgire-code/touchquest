@@ -1,7 +1,6 @@
 # 🌿 TouchQuest • Explore More. Scroll Less.
 
-> **Hacktoberfest Open-Source AI Challenge: "Touch Grass"**  
-> A polished, mobile-first nature exploration companion designed to break algorithmic dopamine loops, inspire real-world outdoor micro-adventures, scan biodiversity, and record avian bioacoustics.
+> A mobile-first, AI-powered nature exploration companion designed to break algorithmic dopamine loops, inspire real-world outdoor micro-adventures, identify local biodiversity, and record avian bioacoustics.
 
 ---
 
@@ -54,19 +53,19 @@ Modern feeds and short-form algorithms are tuned for continuous retention. **Tou
 
 ---
 
-## 📋 Status & Completed Milestones
-
-| Milestone | Component | Status | Highlights |
-|---|---|---|---|
-| **M1** | Scaffolding & Design System | ✅ Completed | Nature palette, typography, glassmorphism, mobile thumb navigation |
-| **M1** | Landing & Explorer Dashboard | ✅ Completed | "Explore More. Scroll Less." headline, streak counter, quick quests |
-| **M2** | AI Adapter Architecture | ✅ Completed | Dual-provider support (Groq + Hugging Face Router v1) |
-| **M2** | Live Open-Weight Inference | ✅ Verified | Sub-second mission generator & multimodal nature vision scanner |
-| **M3** | Interactive Leaflet Map | ✅ Completed | OpenStreetMap tiles, GPS "Locate Me", and live Overpass API green spaces |
-| **M3** | Supabase Auth & Guest Mode | ✅ Completed | Email/password authentication with instant "Guest Naturalist" fallback |
-| **M3** | Field Nature Journal | ✅ Completed | Sensory note logging, offline minute tracking, search & tag filtering |
+## 📋 Core Capabilities
+ 
+| Component | Status | Features |
+|---|---|---|
+| **Design System & Shell** | ✅ Production | Nature palette, typography, glassmorphism, mobile thumb navigation |
+| **Explorer Dashboard** | ✅ Production | Streak counter, quick quests, sensory reminders, recent sightings |
+| **AI Mission Generator** | ✅ Production | Sub-second outdoor quests customized by duration and terrain |
+| **Nature Vision Scanner** | ✅ Production | Multimodal AI classification for plants, trees, fungi, and wildlife |
+| **Interactive Nature Map** | ✅ Production | Leaflet + OpenStreetMap tiles, GPS geolocation, and Overpass API green spaces |
+| **Field Nature Journal** | ✅ Production | Sensory note logging, offline minute tracking, search & tag filtering |
+| **Auth & Data Security** | ✅ Production | Supabase Auth with PostgreSQL Row-Level Security and Guest fallback |
 
 ---
 
 ## 📜 License
-MIT © TouchQuest Open-Source Contributors. Built for the Hacktoberfest 2026 Open-Source AI Challenge: Touch Grass.
+MIT © TouchQuest Open-Source Contributors.

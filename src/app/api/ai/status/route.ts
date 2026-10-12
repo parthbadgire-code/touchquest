@@ -6,6 +6,6 @@ export async function GET() {
   return NextResponse.json({
     status: "ok",
     providers: status,
-    openWeightsChallenge: "Hacktoberfest 2026: Touch Grass",
+    platform: "TouchQuest Open Nature AI",
   });
 }

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "nature exploration",
     "touch grass",
     "open source AI",
-    "hacktoberfest",
+    "outdoor wellness",
     "micro adventures",
     "biodiversity scanner",
     "birdcall classifier",

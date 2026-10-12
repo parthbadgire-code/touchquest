@@ -59,7 +59,7 @@ export function Navbar() {
             </Link>
 
             <Badge variant="sage" size="sm" className="hidden lg:inline-flex ml-2">
-              Hacktoberfest 2026
+              Nature Companion
             </Badge>
           </div>
 

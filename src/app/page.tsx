@@ -39,7 +39,7 @@ export default function LandingPage() {
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full bg-forest-900/5 border border-forest-900/10 px-3.5 py-1 text-xs font-semibold text-forest-900 shadow-xs">
               <span className="flex h-2 w-2 rounded-full bg-emerald-600 animate-pulse" />
-              <span>Hacktoberfest 2026: Touch Grass AI Challenge</span>
+              <span>AI-Powered Nature Exploration Companion</span>
             </div>
 
             <div className="space-y-3">
@@ -167,9 +167,9 @@ export default function LandingPage() {
                   <span className="text-forest-300 font-normal italic">No Proprietary Lock-In.</span>
                 </h2>
                 <p className="text-sm text-cream-300/90 leading-relaxed">
-                  In compliance with the Hacktoberfest Open-Source AI Challenge, TouchQuest relies
-                  strictly on genuine open-weight models accessed via hosted inference APIs.
-                  Zero fake mocks, zero local Ollama installations required.
+                  TouchQuest relies on state-of-the-art open-weight models accessed via fast hosted
+                  inference APIs. Complete transparency, zero proprietary lock-in, and instant
+                  cloud-speed execution.
                 </p>
 
                 <div className="space-y-2 pt-2">
