@@ -2,6 +2,8 @@
 
 > A mobile-first, AI-powered nature exploration companion designed to break algorithmic dopamine loops, inspire real-world outdoor micro-adventures, identify local biodiversity, and record avian bioacoustics.
 
+**Live Application:** [https://touchquest.vercel.app](https://touchquest.vercel.app)
+
 ---
 
 ## 🌲 Vision & Problem Statement
