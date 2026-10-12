@@ -1,26 +1,105 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-forest-950: #0a1f16;
+  --color-forest-900: #123324;
+  --color-forest-800: #184230;
+  --color-forest-700: #1e523c;
+  --color-forest-600: #29684d;
+  --color-forest-500: #34805f;
+  --color-forest-400: #499e78;
+  --color-forest-300: #71bd99;
+  --color-forest-200: #a4dcbf;
+  --color-forest-100: #d2f0df;
+  --color-forest-50: #f0f9f4;
+
+  --color-sage-900: #263329;
+  --color-sage-800: #3d4f41;
+  --color-sage-700: #546a59;
+  --color-sage-600: #6b8470;
+  --color-sage-500: #88a38d;
+  --color-sage-400: #a7bfa9;
+  --color-sage-300: #c6d9c8;
+  --color-sage-200: #e0ece1;
+  --color-sage-100: #f1f7f2;
+  --color-sage-50: #f7faf7;
+
+  --color-cream-950: #1f1d19;
+  --color-cream-900: #2d2a24;
+  --color-cream-800: #454037;
+  --color-cream-700: #655e52;
+  --color-cream-600: #918878;
+  --color-cream-500: #c4bcae;
+  --color-cream-400: #ded8cb;
+  --color-cream-300: #ede8dc;
+  --color-cream-200: #f5f2e9;
+  --color-cream-100: #faf8f2;
+  --color-cream-50: #fdfcf9;
+
+  --color-earth-900: #482c16;
+  --color-earth-800: #633c1f;
+  --color-earth-700: #85532b;
+  --color-earth-600: #a86b39;
+  --color-earth-500: #c27d38;
+  --color-earth-400: #d99c5c;
+  --color-earth-300: #e8b984;
+  --color-earth-200: #f3d7b8;
+  --color-earth-100: #faebd9;
+  --color-earth-50: #fdf6ee;
+
+  --color-moss-800: #2e411c;
+  --color-moss-700: #3b5323;
+  --color-moss-600: #4e6b2c;
+  --color-moss-500: #648537;
+  --color-moss-400: #7fa347;
+  --color-moss-200: #c8d99d;
+  --color-moss-100: #ecf3d9;
+  --color-moss-50: #f7faee;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #faf8f2;
+  --foreground: #123324;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom subtle nature scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f2e9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a7bfa9;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #88a38d;
+}
+
+/* Glassmorphism nature token utility */
+.nature-glass {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.nature-glass-dark {
+  background: rgba(18, 51, 36, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+

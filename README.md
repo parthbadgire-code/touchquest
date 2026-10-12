@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 TouchQuest • Explore More. Scroll Less.
 
-## Getting Started
+> **Hacktoberfest Open-Source AI Challenge: "Touch Grass"**  
+> A polished, mobile-first nature exploration companion designed to break algorithmic dopamine loops, inspire real-world outdoor micro-adventures, scan biodiversity, and record avian bioacoustics.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌲 Vision & Problem Statement
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Modern feeds and short-form algorithms are tuned for continuous retention. **TouchQuest flips the paradigm**: instead of keeping you on the glass screen, it gives you a tactile outdoor quest (15, 30, or 60 minutes), guides your attention toward local flora and birdsong, and asks you to pocket the phone.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework:** Next.js 14+ (App Router) with TypeScript & React 19
+- **Design System:** Vanilla Tailwind CSS with custom nature palette (Forest green `#123324`, Muted sage `#88a38d`, Warm cream `#faf8f2`, Earth ochre `#c27d38`), responsive mobile-first bottom navigation, glassmorphism tokens
+- **Icons:** `lucide-react`
+- **Database & Auth:** Supabase (PostgreSQL with Row-Level Security, Auth, Storage)
+- **Maps:** Leaflet & OpenStreetMap (Privacy-preserving local green space tiles)
+- **AI Models (100% Genuine Open Weights via Hosted Inference):**
+  - **Outdoor Missions:** Groq Cloud `qwen/qwen3.8-27b` (sub-second JSON generation) or Hugging Face Router v1 (`Qwen/Qwen2.5-7B-Instruct`)
+  - **Nature Scanner:** Groq Cloud `qwen/qwen3.8-27b` (multimodal botanical and wildlife vision) or Hugging Face Router v1 (`Qwen/Qwen2.5-VL-72B-Instruct`)
+  - **BirdCall AI:** Server-side route with 10MB upload limit and dedicated Cornell BirdNET endpoint hook (`HF_AUDIO_ENDPOINT`)
+- **Deployment:** Vercel ready
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Quickstart
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone and Install:**
+   ```bash
+   git clone https://github.com/parthbadgire-code/touchquest.git
+   cd touchquest
+   npm install
+   ```
 
-## Deploy on Vercel
+2. **Configure Environment:**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Add your `GROQ_API_KEY` (100% free at [console.groq.com/keys](https://console.groq.com/keys), no credit card required) or `HF_API_TOKEN`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Build for Production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📋 Status & Completed Milestones
+
+| Milestone | Component | Status | Highlights |
+|---|---|---|---|
+| **M1** | Scaffolding & Design System | ✅ Completed | Nature palette, typography, glassmorphism, mobile thumb navigation |
+| **M1** | Landing & Explorer Dashboard | ✅ Completed | "Explore More. Scroll Less." headline, streak counter, quick quests |
+| **M2** | AI Adapter Architecture | ✅ Completed | Dual-provider support (Groq + Hugging Face Router v1) |
+| **M2** | Live Open-Weight Inference | ✅ Verified | Sub-second mission generator & multimodal nature vision scanner |
+| **M3** | Interactive Leaflet Map | ✅ Completed | OpenStreetMap tiles, GPS "Locate Me", and live Overpass API green spaces |
+| **M3** | Supabase Auth & Guest Mode | ✅ Completed | Email/password authentication with instant "Guest Naturalist" fallback |
+| **M3** | Field Nature Journal | ✅ Completed | Sensory note logging, offline minute tracking, search & tag filtering |
+
+---
+
+## 📜 License
+MIT © TouchQuest Open-Source Contributors. Built for the Hacktoberfest 2026 Open-Source AI Challenge: Touch Grass.
